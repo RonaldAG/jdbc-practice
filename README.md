@@ -28,9 +28,18 @@ Por fim, o método [closeConnection()](https://github.com/RonaldAG/jdbc-practice
 ## Etapa 2
 O segundo commit trata da lógica de recuperação de dados. Refere-se a utilização das classes presentes no pacote java.sql para executar querys e obter os dados da tabela.
 As classes usadas do pacote java.sql foram:
-- Statement: Passa um comando SQL para o banco de dados;
-- ResultSet: Armazena os dados da query;
+- `Statement`: Passa um comando SQL para o banco de dados;
+- `ResultSet`: Armazena os dados da query;
 
 Para isso, foi criado um novo método main que simplimente executa o query
 
 ![image](https://user-images.githubusercontent.com/84423626/208242929-674cab77-5398-4d0c-b196-fcfaf22ea162.png)
+
+## Etapa 3
+O terceiro commit adiciona a lógica de inserção de novas linhas na tabela. Para fazer isso, foi necessário utilizar as sequintes classes:
+- `PreparedStatement`: Objeto que permite montar a consulta SQL, deixando os parâmetros para depois.
+- `executeUpdate`: método que faz a inserção das novas linhas
+- `Statement.RETURN_GENERATED_KEYS`: Recupera o ID do dado inserido
+- `getGeneratedKeys`: Retorna os ID's de cada linha
+
+Nessa etapa, fiz duas implementações, uma que retorna o [número de linhas afetadas](https://github.com/RonaldAG/jdbc-practice/blob/main/src/application/InsertDataUsingJDBC.java) após a nova inserção e outra que retorna os [id's de cada linha](https://github.com/RonaldAG/jdbc-practice/blob/main/src/application/InsertDataWithRowsID.java) inserida.
