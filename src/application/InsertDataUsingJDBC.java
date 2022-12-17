@@ -18,6 +18,7 @@ public class InsertDataUsingJDBC {
 		
 		try {
 			conn = DB.getConnection();
+			
 			st = conn.prepareStatement(
 				"INSERT INTO SELLER "
 				+ "(Name, Email, BirthDate, BaseSalary, DepartmentId)"
