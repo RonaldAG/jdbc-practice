@@ -24,3 +24,13 @@ Em seguida, foi criado o método [getConnection()](https://github.com/RonaldAG/j
 Por fim, o método [closeConnection()](https://github.com/RonaldAG/jdbc-practice/blob/main/src/db/DB.java) foi desenvolvido para encerrar a conexão.
 
 ![image](https://user-images.githubusercontent.com/84423626/208240558-80f6cbee-b10e-4572-9198-42f1c7455ad2.png)
+
+## Etapa 2
+O segundo commit trata da lógica de recuperação de dados. Refere-se a utilização das classes presentes no pacote java.sql para executar querys e obter os dados da tabela.
+As classes usadas do pacote java.sql foram:
+- Statement: Passa um comando SQL para o banco de dados;
+- ResultSet: Armazena os dados da query;
+
+Para isso, foi criado um novo método main que simplimente executa o query
+
+![image](https://user-images.githubusercontent.com/84423626/208242929-674cab77-5398-4d0c-b196-fcfaf22ea162.png)
