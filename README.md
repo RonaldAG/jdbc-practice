@@ -43,3 +43,6 @@ O terceiro commit adiciona a lógica de inserção de novas linhas na tabela. Pa
 - `getGeneratedKeys`: Retorna os ID's de cada linha
 
 Nessa etapa, fiz duas implementações, uma que retorna o [número de linhas afetadas](https://github.com/RonaldAG/jdbc-practice/blob/main/src/application/InsertDataUsingJDBC.java) após a nova inserção e outra que retorna os [id's de cada linha](https://github.com/RonaldAG/jdbc-practice/blob/main/src/application/InsertDataWithRowsID.java) inserida.
+
+## Etapa 4
+A quarta etapa consiste em aplicar uma [lógica de alteração de dados](https://github.com/RonaldAG/jdbc-practice/blob/main/src/application/UpdateData.java). Utilizando os mesmos recursos da etapa 3, podemos alterar dados através da classe preparedStatement e o método executeUpdate.
