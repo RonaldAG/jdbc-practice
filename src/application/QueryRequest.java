@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 import db.DB;
 
-public class Parte2 {
+public class QueryRequest {
 	public static void main(String[] args) {
 		Connection conn1 = null;
 		Statement st = null;
@@ -18,6 +18,7 @@ public class Parte2 {
 			
 			rs = st.executeQuery("select * from department");
 			
+			// Print lines
 			while (rs.next()) {
 				System.out.println(rs.getInt("Id") + "," + rs.getString("Name"));
 			}
